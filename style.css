@@ -1,0 +1,543 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navbar  */
+.navbarcontainer{
+    width: 100%;
+    height: 120px;
+    background-color: black;
+    display: grid;
+    grid-template-rows:52px 1fr;
+    border-bottom: 2px solid #64c9f8;
+}
+
+.navtop{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.navtop img{
+    width: 65px;
+    height: 45px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.navbottom{
+    display: grid;
+    grid-template-columns: repeat(3,400px);
+    justify-content: space-around;
+
+}
+
+
+.navbottom2{
+    display: grid;
+    grid-template-columns: repeat(4,80px);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    column-gap: 25px;
+    padding-left: 16px;
+}
+
+.navbottom2 img{
+    background-color: red;
+}
+    
+
+.navbottom2 a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;;
+    font-size: 16px;
+    &:hover{
+        color: #00aeff; 
+    }
+}
+
+.navbottom1 img{
+    width: 100%;
+    height: 43px;
+    margin-top: 9px;
+}
+.navbox{
+    width: 200px;
+    height: 45px;
+    background-color: white;
+    &:hover{
+        background-color: #00aeff;
+
+    }
+}
+
+.navbottom3{
+    background-color:black;
+    display: grid;
+    grid-template-columns: 180px 45px 45px 45px 45px;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+    font-size: 20px;
+}
+
+.navbottom3 input{
+    color: #00aeff;
+    padding-left: 10px;
+    font-style: italic;
+    outline: none;
+    font-size: 13px;
+    font-weight: 400;
+
+}
+
+.nb a{
+    text-decoration:none;
+    color: aliceblue;
+    &:hover{
+        color: #00aeff;
+    }
+    
+}
+
+/* navbar end here  */
+
+
+/* banner start  */
+.banner{
+    width: 100%;
+    height: 700px;
+    background-color: black;
+    position: relative;
+    border-bottom-style:outset;
+}
+
+.banner-container{
+    width: 100%;
+    height: 651px;
+    padding-top: 30px;
+
+}
+.banner-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.bannertext{
+    width: 483px;
+    height: 145px;
+    position: absolute;
+    top: 27%;
+    left: 5%;
+    
+
+}
+.bannertext img{
+    width: 100%;
+    height: 100%;
+}
+
+.buy{
+    width: 300px;
+    height: 100px;
+    top: 50%;
+    position: absolute;
+    background-color:grey;
+    
+    left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    font-family: 'Quicksand', sans-serif;
+    opacity: 0.5;
+    &:hover{
+        opacity: 1;
+    }
+}
+
+.buy a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.buy button{
+    background: transparent;
+    outline: none;
+    border-radius: 18px;
+    width: 300px;
+    height: 100px;
+    
+}
+
+/* banner end here  */
+
+
+/* main gallery  */
+.gallery-head h1{
+    color: white;
+}
+
+.gallery1-container{
+    width: 100%;
+    height: 1390px;
+    display: grid;
+    background-color:black;
+    grid-template-rows: 100px 1fr;
+}
+
+.gallery-head{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.gallery-images{
+
+    display: grid;
+    grid-template-columns:repeat(4,350px);
+    grid-template-rows: 350px 50px 350px  50px  350px  50px;
+    justify-content: space-around;
+    row-gap: 15px;
+}
+.imagebox{
+    border: 1px solid grey;
+}
+
+
+.gallery-images img{
+    width: 100%;
+    height: 100%;
+    &:hover{
+        transform: scale(1.1);
+        transition: transform 0.1s ease;
+        box-shadow: 0 8px 24px red;
+    }
+}
+
+.gallery-images h3{
+    color: white;
+   
+}
+
+/* gallery end here  */
+
+.video-audio{
+    width: 100%;
+    /* height: 700px; */
+    height: 1082px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    background: url(./Images/crewback.jpg);
+    position: relative;
+      
+}
+
+.vbox1{
+    background-color:black;
+    width: 400px;
+    height: 600px;
+    display: grid;
+    grid-template-rows: 250px 1fr 250px;
+    border: 3px solid rgb(46, 69, 11);
+
+}
+
+.vbox1 img{
+    width: 100%;
+    height: 100%;
+   
+}
+
+.vb-audio{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(158, 244, 29);
+    opacity: 0.7;
+    &:hover{
+        opacity: 1;
+    }
+
+}
+
+.vbox2{
+    background-color: burlywood;
+    width: 553px;
+    height: 400px;
+    margin-top: -389px;
+    
+}
+.vbox3{
+    background-color: rgb(158, 244, 29);
+    line-height: 1.4;
+    width: 400px;
+    height: 600px;
+    padding: 20px;
+    border: 3px solid rgb(46, 69, 11);
+
+}
+
+.vbox3 p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.vbox2 video{
+    width: 100%;
+    height: 100%;
+}
+
+.crew{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    background-color: black;
+    
+}
+.crew iframe{
+    position: absolute;
+    /* top:-60% ; */
+    top: -888%;
+    margin-left: 480px;
+ 
+    
+}
+
+
+
+/* text section  */
+
+.textcontainer-1{
+    width: 100%;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    /* border-top: 2px solid red; */
+   
+}
+
+.tc1{
+    width:95%;
+    height: 466px;
+    margin-top: 65px;
+    padding: 20px;
+    box-shadow:  0 8px 24px;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px red;
+    margin-top: 72px;
+}
+
+.ch1{
+    font-size: 60px;
+    color: red;
+   font-weight: 700;
+
+}
+
+.ch3{
+    font-family: 'Amatic SC', cursive;
+    color: white;
+}
+
+/* text end here  */
+
+/* form link  */
+ .formconnection{
+    width: 100%;
+    height: 124px;
+    color: white;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+   
+     background-color: black;
+ }
+
+ .offer{
+    width: 100%;
+    height:117px;
+    background: transparent;
+    padding-left: 17px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 1px solid red;
+    border-radius: 10px;
+ }
+ .offer a{
+    font-size: 25px;
+    color: rgb(123, 25, 193);
+ }
+ .offer h1{
+    color: white;
+    letter-spacing: 2px;
+    
+ }
+
+ .offer button{
+    height: 35px;
+    width: 171px;
+    position: relative;
+    top: 8px;
+    left: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #00aeff;
+    border-radius: 6px;
+    border: 2px solid white;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 1px;
+    font-weight: 600;
+
+}
+/* form link end here  */
+
+
+/* animation design section  */
+.design{
+    width: 100%;
+    height: 135px;
+    background-color: black;
+    display: flex;
+    column-gap: 100px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.dbox{
+    width: 50px;
+    height: 50px;
+    background-color: #f3f3f3;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px ;
+    box-shadow: 0 8px 24px red
+
+}
+
+.dbox{
+    animation: corvorotation 8s infinite linear;
+}
+
+  @keyframes corvorotation {
+    from{
+        transform: rotate(0deg);
+    }
+    
+    to{
+        transform: rotate(360deg);
+    }
+    
+  }
+
+
+.dbox p{
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.design p{
+    animation: text 8s infinite linear;
+}
+
+@keyframes text {
+    to{
+        transform: rotate(0deg);
+    }
+    
+    from{
+        transform: rotate(360deg);
+    }
+    
+  }
+
+
+
+
+.footer{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows:100px 50px 50px ;
+    padding-top: 113px;
+    justify-content: center;
+    column-gap: 310px;
+    color: white;
+    background-color: black;
+    padding-right: 58px;
+    
+}   
+.final{
+    &:hover{
+        text-decoration: underline;
+        color: rgb(200, 37, 37);
+    }
+
+}
+.final h2{
+    font-size: 25px;
+    font-family: 'Jura', sans-serif;
+    
+}
+
+.final p{
+    font-family: 'Russo One', sans-serif;
+    font-size: 15px;
+    
+}
+
+.end{
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-rows: 70x 30px;
+    background-color: black;
+    align-items: center;
+    color: grey;
+
+}
+.social{
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+
+}
+
+.s{
+    width: 70px;
+    height: 70px;
+    
+}
+.social i:hover{
+    color: white;
+}
+
+.done {
+  padding-left: 20px;
+  
+}
+
+.social a{
+    font-size:xx-large;
+    color: grey;
+}
+
+/* end here */
+
+
+

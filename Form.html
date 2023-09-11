@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <style>
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }       
+  
+/* form  */
+.trial-container{
+    width: 100%;
+    height: 739px;
+    background-image: url(./Images/formback2.jpg);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+   
+   
+}
+.trial-head-form{
+    width: 1330px;
+    height: 600px;
+    display: grid;
+    grid-template-rows: 2px 1fr;
+   
+   
+
+}
+
+.thf-top{
+ display: grid;
+ justify-content: center;
+
+
+
+}
+
+.common-head{
+    font-size: 50px;
+    font-family: 'Russo One', sans-serif;
+    
+   
+}
+
+
+.thfbottom{
+display: grid;
+grid-template-columns: 600px 600px;
+display: grid;
+justify-content: center;
+margin-top: -10px;
+margin-left: -300px;
+
+}
+
+.thf-left{
+display: grid;
+
+align-items: center;
+padding-left: 80px;
+font-size: 25px;
+font-style: italic;
+
+}
+
+.box{
+    
+    width: 400px;
+    display: grid;
+    justify-content: center;
+    padding: 21px;
+    background: url(./Images/offernew.webp);
+    color:black;
+    box-shadow: 8px 8px 8px 8px;
+    padding-top: 42px;
+    opacity: 0.5;
+ 
+}
+
+.thf-right{
+height: 386px;
+display: grid;
+color: white;
+
+}
+
+.thfrboxes:nth-child(9){
+    background-color:transparent;
+    padding: 20px;
+    
+}
+
+
+
+form{
+    padding: 20px;
+   
+    
+   
+}
+
+.name{
+    background-color: transparent;
+    width: 242px;
+    margin-left: 93px;
+    border: 3px solid black;
+    color: white;
+    font-size:medium;
+    }
+
+.number{
+    width: 242px;
+    background-color:transparent;
+    margin-left: 56px;
+    border: 3px solid black;
+    color: white;
+    font-size:medium;
+
+}
+
+.radio label{
+    padding-left: 120px;
+    font-size: 15px;
+    
+}
+
+.radio input{
+    margin-left: 5px;
+    padding-top: 2px;
+    color: aqua;
+    border: 3px solid black;
+}
+
+.password{
+    margin-left: 106px;
+    width: 242px;
+    background-color: transparent;
+    border: 3px solid black;
+    color: white;
+    font-size:medium;
+}
+
+#contry{
+    padding-left: 20px;
+    margin-left: 23px;
+    width: 146px;
+    text-align: end;
+    background-color:transparent;
+    border: 3px solid black; 
+}
+
+#file{
+    margin-left: 124px;
+    width: 171px;
+    border: 3px solid black;
+}
+
+.check{
+    margin-left: 34px
+}
+
+.thfrboxes button{
+    width: 100px;
+     
+    height: 41px;
+    margin-left: 240px;
+    border-radius: 10px;
+    color: white;
+    background: transparent;
+    &:hover{
+        background-color:red;
+    }
+}
+
+#home{
+    margin-left: 20px;
+}
+
+button p{
+    font-family:'Titillium Web', sans-serif;
+    font-weight: 600;
+    font-size: large;
+}
+
+form{
+    font-size: large;
+    font-family:'Titillium Web', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+    </style>
+
+
+
+
+<div class="trial-container">
+    <div class="trial-head-form">
+        <div class="thf-top"><h1 class="common-head"></h1></div>
+        <div class="thfbottom">
+            <div class="thf-left">
+                <div class="box"><h2>REGISTER NOW </h2><br><h3>30 DAYS TRIAL</h3><br><h3></h3><br><i class="fa-solid fa-gamepad"></i></div>
+            </div>
+<div class="thf-right">
+                <div class="thfrboxes">
+                    <form ><label >First Name  </label><input type="text" class="name" ></form>
+                </div>           
+                <div class="thfrboxes">
+                    <form ><label >Last Name  </label><input type="text" class="name" ></form>
+                </div>
+                <div class="thfrboxes">
+                    <form action="">
+                        <label for="">Mobile Number  </label>
+                        <input type="number" name="User" id="91"  class="number">        
+                    </form>
+                </div>
+                <div class="thfrboxes">
+                    <form class="radio"> Gender  <label>Male </label> <input type="radio" name="Gender" id=""><label >Female</label><input type="radio" name="Gender" id=""></form>           
+                </div>        
+                <div class="thfrboxes"><form action=""><label for="">Password</label><input type="password" class="password"></form></div>
+                <div class="thfrboxes"><form action=""><label for="Country">Which Country Do You Live In</label><select name="country" id="contry"><option value="INDIA">INDIA</option><option value="USA">USA</option><option value="CANADA">CANADA</option></select></form></div>
+                <div class="thfrboxes"><form action=""><label for="">Upload ID Proof</label><input type="file" name="" id="file"></form></div>
+                <div class="thfrboxes"><form action=""><label for="">Accept Terms & Conditions</label><input type="checkbox" class="check"></form></div>
+                
+                <div class="thfrboxes"><a href="index.html"><button><p>SUBMIT</p></button></a></div>  
+                <div class="thfrboxes" id="home"><a href="index.html"><button><p>HOME</p></button></a></div>            
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
